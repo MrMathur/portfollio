@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*.{html,js}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "Bai Jamjuree": ['Bai Jamjuree', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
